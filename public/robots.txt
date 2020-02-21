@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://sdaniel.me/sitemap.xml

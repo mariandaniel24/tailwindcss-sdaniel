@@ -1,0 +1,16 @@
+/* Footer */
+.social-circle {
+  @apply p-3 m-1 transition-all duration-150 bg-purple-800 rounded-full shadow-sm opacity-75 cursor-pointer;
+}
+
+.social-circle:hover > svg {
+  @apply text-gray-500;
+}
+.social-circle > svg {
+  @apply text-gray-100 transition-all duration-150 stroke-current;
+}
+
+.footer-pattern {
+  @apply bg-sdaniel-200;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232d2c2d' fill-opacity='0.25'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}

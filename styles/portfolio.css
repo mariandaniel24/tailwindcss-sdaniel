@@ -1,0 +1,47 @@
+/* Portfolio */
+.portfolio-item {
+  @apply relative w-full h-64 mx-1 my-3 transition-all duration-300 transform border border-gray-900 shadow-lg;
+}
+
+.portfolio-item:hover {
+  @apply z-10 mx-6 scale-105 outline-none;
+}
+
+.info-box {
+  @apply top-0 bottom-0 left-0 right-0 z-10 pointer-events-none w-full p-4 transition-all duration-200 opacity-0 shadow-sdaniel border-none;
+}
+.portfolio-item:hover > .info-box {
+  @apply absolute opacity-100 pointer-events-auto;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.info-box-description {
+  @apply mt-4 text-sm text-gray-400;
+}
+.info-box-button {
+  @apply absolute inline-block p-2 mt-8 text-xs font-semibold text-center text-gray-200 uppercase bg-purple-800;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .info-box-description:before {
+  @apply absolute;
+  right: 2px;
+  bottom: 0px;
+  content: '...';
+} */
+@screen sm {
+  .portfolio-item {
+    @apply w-1/3;
+  }
+}
+@screen md {
+  .portfolio-item {
+    @apply w-1/4;
+  }
+}
+
+.portfolio-item img {
+  @apply absolute object-cover w-auto min-h-full;
+}

@@ -1,0 +1,14 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './footer.css';
+@import './header.css';
+@import './contact.css';
+@import './portfolio.css';
+/* Default */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  @apply bg-sdaniel-100;
+}
