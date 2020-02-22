@@ -3,6 +3,7 @@ import Logo from '../Header/Logo';
 // import links from '../../utils/links';
 import SocialLinks from './SocialLinks';
 
+const EMAIL = 'sm24.daniel@gmail.com';
 const Footer = () => {
   return (
     <footer className="w-full min-h-0 px-4 pt-4 pb-12 footer-pattern bg-sdaniel-200">
@@ -13,10 +14,10 @@ const Footer = () => {
             <span>Email </span>
           </p>
           <a
-            href="mailto:contact@sdaniel.me"
+            href={`mailto:${EMAIL}`}
             className="mt-4 font-medium tracking-wide text-gray-300"
           >
-            sm24.daniel@gmail.com
+            {EMAIL}
           </a>
         </div>
       </div>
