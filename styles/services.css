@@ -1,5 +1,8 @@
 .service-item {
-  @apply p-4 pb-8 w-4/5 mx-2 text-center my-8 bg-sdaniel-transparent relative;
+  @apply p-4 pb-8 w-4/5 mx-2 text-center my-8 bg-sdaniel-transparent relative transition duration-150 shadow-md;
+}
+.service-item:hover {
+  @apply shadow-xl;
 }
 
 .service-svg {

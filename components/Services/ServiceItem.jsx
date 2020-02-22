@@ -16,7 +16,7 @@ const ServiceItem = ({ title, description, icon }) => {
       <h4 className="font-normal text-xl uppercase tracking-wider text-white mt-4">
         {title}
       </h4>
-      <p className="text-gray-300 mt-4 text-sm">{description}</p>
+      <p className="text-gray-400 mt-4 text-sm">{description}</p>
     </div>
   );
 };
