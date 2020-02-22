@@ -9,22 +9,20 @@ const PortfolioItem = ({ project }) => {
     <div className="portfolio-item">
       <Webp
         src={fullThumbnail}
-        alt={`${title} - ${thumbnail.split(['.'][0])} image`}
+        alt={`${title} ${thumbnail.split('.')[0]} website image`}
       />
       <div className="info-box">
-        <h5 className="text-xl font-bold tracking-wide text-center text-purple-600 uppercase">
+        <h5 className="text-xl font-bold tracking-tighter border-gray-100 border-bottom text-center text-purple-600 uppercase">
           {title}
         </h5>
-        <p className="info-box-description" style={{ maxHeight: 100 }}>
-          {description}
-        </p>
+        <p className="info-box-description">{description}</p>
         <a
           className="round-button info-box-button hover:bg-transparent hover:scale-x-105 hover:text-purple-500 hover:border-purple-700"
           rel="noopener"
           target="_blank"
           href={website}
         >
-          Open website
+          Website
         </a>
       </div>
     </div>

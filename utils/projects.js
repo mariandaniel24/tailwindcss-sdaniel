@@ -35,7 +35,7 @@ const PROJECTS = [
   {
     folder: 'dailyroads',
     title: 'DailyRoads',
-    description: `DailyRoads is mainly a mobile app dash cam, continuously capturing videos and photos during your journeys. I created the website, which helps users manage their existing photos/videos that were created by the app.`,
+    description: `DailyRoads is mainly a mobile app dash cam, continuously capturing media your journeys. I created the website, on which users can manage existing photos/videos.`,
     images: ['homepage.png'],
     thumbnail: 'homepage.png',
     website: 'https://dailyroads.com'

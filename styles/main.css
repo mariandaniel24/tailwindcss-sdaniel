@@ -5,6 +5,7 @@
 @import './header.css';
 @import './contact.css';
 @import './portfolio.css';
+@import './services.css';
 /* Default */
 html {
   scroll-behavior: smooth;
