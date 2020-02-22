@@ -16,7 +16,7 @@ const Footer = () => {
             href="mailto:contact@sdaniel.me"
             className="mt-4 font-medium tracking-wide text-gray-300"
           >
-            contact@sdaniel.me
+            sm24.daniel@gmail.com
           </a>
         </div>
       </div>
