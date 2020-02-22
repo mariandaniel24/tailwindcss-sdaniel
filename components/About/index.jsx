@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Webp from '../Common/Webp';
 import SectionContent from '../Common/SectionContent';
-
+import { ABOUT_DESCRIPTION } from '../../utils/about';
 const About = () => {
   return (
     <SectionContent pageName="about" title="About me">
@@ -10,10 +10,7 @@ const About = () => {
         Hello, I am <span className="text-purple-600">Daniel</span>.
       </p>
       <p className="mt-8 font-normal text-gray-300 max-w-lg mx-auto tracking-tight leading-7">
-        I am a self taught web developer, I am passionate about designing and
-        developing user-friendly websites. I have the skills to create high
-        quality web apps or improve existing websites for individuals and
-        organisations, using the latest technologies.
+        {ABOUT_DESCRIPTION}
       </p>
       <img
         src="img/about-me.svg"

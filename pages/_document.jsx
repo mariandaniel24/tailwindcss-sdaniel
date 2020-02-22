@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { ABOUT_DESCRIPTION } from '../utils/about';
 
 class MyDocument extends Document {
   static getInitialProps(props) {
@@ -18,10 +19,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
-
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, viewport-fit=cover"
@@ -41,19 +41,43 @@ class MyDocument extends Document {
             integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="
             crossOrigin="anonymous"
           />
-
-          <meta name="description" content="" />
+          <meta name="description" content={ABOUT_DESCRIPTION} />
           <meta
             name="keywords"
             content="website for my business, web developer, web designer, UI, UX, SEO, webpage creator"
           />
+          {/* Favicon */}
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="apple-touch-icon.png"
+          />
+
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon-16x16.png"
+          />
+          <link rel="manifest" href="site.webmanifest" />
+          <link rel="mask-icon" href="safari-pinned-tab.svg" color="#1c1c1c" />
+          <meta name="apple-mobile-web-app-title" content="sDaniel" />
+          <meta name="application-name" content="sDaniel" />
+          <meta name="msapplication-TileColor" content="#1c1c1c" />
+          <meta name="theme-color" content="#1c1c1c" />
         </Head>
         <body className="font-body sm:overflow-y-visible">
           <Main />
 
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
