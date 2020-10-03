@@ -9,15 +9,6 @@ const PROJECTS = [
     website: 'https://next-eloboost.com'
   },
   {
-    folder: 'microhelse-norge',
-    title: 'Microhelse Norge',
-    description:
-      'Microhelse Norge is a company founded in 2018. This web app presents informations about the company and helps users find the closest authorized BEMER dealers.',
-    images: ['dealer.png', 'admin.png', 'dealers.png', 'homepage.png'],
-    thumbnail: 'dealers.png',
-    website: 'https://microhelsenorge.no'
-  },
-  {
     folder: 'darkboosts',
     title: 'DarkBoosts',
     description:
